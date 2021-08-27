@@ -4,8 +4,61 @@ selector{
 }
 */
 body{
-    background-color: rgb(220, 183, 255);
+    background-color: rgb(147, 123, 170);
 }
 h1,h2{
     text-align: center;
+}
+header{
+    background-image: url('../img/header.jpg');
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 99%;
+
+}
+header h1{
+    background-color: rgba(255, 255, 255, 0.555);
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+}
+nav {
+    background-color: transparent;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    left: 50px;
+}
+nav ol li{
+    background-color: rgb(36, 34, 34);
+    display: inline;
+    color: white;
+    padding: 15px;
+    margin: 0px 10px;
+
+}
+article{
+    padding-top: 200px;
+    background: linear-gradient(rgb(180, 113, 113),rgb(124, 124, 29));
+    width: 80%;
+    margin-left: 10%;
+    
+}
+article#casera{
+    background: linear-gradient(rgba(190, 55, 55, 0.568),rgb(197, 197, 42));
+}
+nav ol li a{
+    text-decoration: none;
+    color: white;
+}
+nav ol li:hover{
+    background-color: violet;
+    color: black;
+    box-shadow: 5px 3px 5px black;
+    
+}
+nav ol li a:hover{
+    color: black;
 }

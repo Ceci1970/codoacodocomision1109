@@ -15,7 +15,9 @@ header{
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    width: 99%;
+    width: 80%;
+    top: 0px;
+    margin-left: 10%;
 
 }
 header h1{
@@ -42,8 +44,8 @@ nav ol li{
 article{
     padding-top: 200px;
     background: linear-gradient(rgb(180, 113, 113),rgb(124, 124, 29));
-    width: 80%;
-    margin-left: 10%;
+    width: 80% !important;
+    
     
 }
 article#casera{
@@ -61,4 +63,7 @@ nav ol li:hover{
 }
 nav ol li a:hover{
     color: black;
+}
+main {
+width: 80%;
 }

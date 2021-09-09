@@ -8,9 +8,10 @@ body{
 }
 #flecha{
     position: absolute;
+    left: 180px;
     /* animation-name: mover;
     animation-duration: 5s; */
-    animation: mover 5s 2s infinite reverse;
+    /* animation: mover 5s 2s infinite reverse; */
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 @keyframes fadeIn {
@@ -18,7 +19,7 @@ body{
     to{opacity: 1;}
 
 }
-#pelota:hover{
+#pelota{
     animation-name: fadeIn,otra,fadeIn;
     animation-duration: 15s,5s,5s;
     /* animation-delay: 5s,7s,2s; */
@@ -52,7 +53,7 @@ ul li:hover{
         padding:20px;
         background-color: white;
         color: black;
-        box-shadow: rgb(104, 72, 67);
+        box-shadow: 5px 5px 5px black;
         border-radius: 40px;
         font-size: 30px;
     }

@@ -11,7 +11,7 @@ h1,h2{
 }
 header{
     background-image: url('../img/header.jpg');
-    height: 120px;
+    height: 150px;
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -19,6 +19,15 @@ header{
     top: 0px;
     margin-left: 10%;
 
+}
+article{
+    padding-top: 100px;
+    background: linear-gradient(rgb(180, 113, 113),rgb(124, 124, 29));
+    width: 81%;
+    margin-left: 10%;
+        
+    
+    
 }
 header h1{
     background-color: rgba(255, 255, 255, 0.555);
@@ -41,15 +50,7 @@ nav ol li{
     margin: 0px 10px;
 
 }
-article{
-    padding-top: 100px;
-    background: linear-gradient(rgb(180, 113, 113),rgb(124, 124, 29));
-    width: 80%;
-    margin-left: 10%;
-    
-    
-    
-}
+
 article#casera{
     background: linear-gradient(rgba(190, 55, 55, 0.568),rgb(197, 197, 42));
 }
@@ -67,5 +68,6 @@ nav ol li a:hover{
     color: black;
 }
 main {
-    width: 80%;
+    width: 100%;
+
 }

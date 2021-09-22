@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    /*width: 70%;*/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+header{
+    background: red;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px; /*para centrar verticalmente, le pongo 100px porque es la misma medida que tiene la caja*/
+    color: white;
+    border-bottom: 3px dashed black;
+}
+nav{
+    background: lightsteelblue;
+    height: 50px;
+    border-top: 1px solid black;
+}
+
+nav ul li{
+    float:left; /*todos flotan a la izquierda, se colocan uno al lado del otro*/
+    list-style: none;/*para que no tengan ningun estilo, como los puntitos que ponen automaticamente*/
+    margin: 10px;
+    line-height: 30px; /*le doy una altura a las lineas*/
+}
+
+.clearfix{
+    clear: both; /*asi todos los elementos te quedan en su sitio*/
+}
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    background: green;
+    min-height: 500px;/*le coloco una altura minima*/
+    padding: 40px;
+}
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1p solid #eee;
+}
+.article h2{
+    font-size: 25px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 20px); /*le saco 10 px de la izquierda y de la derecha*/
+    background: orange;
+    min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px; /*para que alinee la line del texto*/
+}

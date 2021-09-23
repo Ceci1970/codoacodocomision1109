@@ -1,0 +1,10 @@
+#derecha{
+    text-align: right;
+    float: right;
+    margin-top: 200px;
+    margin-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    float: right;
+}

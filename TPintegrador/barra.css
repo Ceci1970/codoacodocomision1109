@@ -1,0 +1,11 @@
+#fotoppal{
+    background-image: url('img/ba1.jpg');
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin-left: 10%;
+
+}

@@ -1,2 +1,8 @@
-@media screen and (max-width: 320px)
-.mi
+#derecha{
+    display: block;
+    text-align: right;
+    float: right;
+    margin-bottom: 30%;
+    margin-left: 10%;
+    position: absolute;
+}

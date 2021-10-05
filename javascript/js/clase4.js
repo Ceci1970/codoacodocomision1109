@@ -3,7 +3,7 @@ let elemento = document.getElementById("principal");/*Capturamos el div del dom*
 /*esamos el evento load renderizamos el formulario*/
 window.addEventListener('load',function(){
     elemento.innerHTML=`
-    <form>
+    <form action="#">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -17,18 +17,12 @@ window.addEventListener('load',function(){
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
-    <button type="submit" id="btn" class="btn btn-primary">Entrar</button>
+    <button type="button" id="btn" class="btn btn-primary" onclick="entrar()">Entrar</button>
   </form>`;
 
 
-
-
-
-
-
-
-
     });
+    
    /* let btn = document.getElementById("btn");capturamos el boton*/
    let usuarios=["Luis","Fede",40];
    let usuario = {

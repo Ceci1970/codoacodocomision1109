@@ -7,7 +7,14 @@
 .navbar-nav {
     /* position: absolute; */
     padding-left: 20%;
+    
 }
+#colorbarra{
+    background-color: rgb(66, 73, 73);
+    
+    
+}
+
 #derecha{
     
     display: block;
@@ -37,6 +44,9 @@ a{
     background-color: rgb(50, 153, 81);
     color: white;
 }
+.navbar-brand{
+    padding-left: 5%;
+}
 
 @media (min-width:1281px){
     .collapse navbar-collapse {
@@ -59,12 +69,7 @@ a{
         font-size:10px ;
         
     }
-    /* .navbar-nav.navbar-center {
-        position: absolute;
-        margin-right: 2%;
-        
-        
-    } */
+    
     
     
 }

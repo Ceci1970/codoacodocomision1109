@@ -7,9 +7,9 @@ let mascotas = [];
 // mascotas[0]= "Loro";
 // mascotas[0]="Loro grande"
 // mascotas[1] = "Perro";
-//{propietario,especie,raza,edad,tamaño,imagen,tipoConsulta}
+//{propietario,especie,raza,edad,tamaño,imagen,tipoConsulta} todo esto es un objeto
 const agregarMascota=()=>{
-    let datos = document.querySelectorAll("input");
+    let datos = document.querySelectorAll("input"); //voy recibiendo todos los datos que se van ingresando
     // console.log(datos[6].checked);
     let consulta="";
     if(datos[6].checked){
@@ -18,7 +18,7 @@ const agregarMascota=()=>{
         consulta="consulta"
     }
     console.log(consulta);
-    let mascota= {
+    let mascota= { //todo esto es un objeto
         propietario:datos[0].value,
         especie:datos[1].value,
         raza:datos[2].value,
@@ -70,7 +70,7 @@ const modificarM=(b)=>{
     <label class="form-check-label" for="urgencia">Urgencia</label>
 </div>
 <div class="mb-3 form-check">
-<input type="radio" class="form-check-input" name="tipo" id="consulta" >
+<input type="radio" class="form-check-input" name="tipo" id="consulta" > //aca es radio para elegir una u otra
 <label class="form-check-label" for="consulta">Consulta</label>
 </div>`
   }
@@ -176,7 +176,7 @@ const CrearFormulario=()=>{
     document.getElementById("btn").addEventListener('click',agregarMascota);
 
 };
-CrearFormulario(); 
+CrearFormulario(); //llama a la funcion que crea el fomulario
 
 // let numeros =[5,78,98,77];
 // console.log(numeros.indexOf(77)) 

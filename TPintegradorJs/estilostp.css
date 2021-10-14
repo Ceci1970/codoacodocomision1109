@@ -1,0 +1,44 @@
+
+.navbar-nav {
+    /* position: absolute; */
+    padding-left: 20%;
+    
+}
+#colorbarra{
+    background-color: rgb(66, 73, 73);
+    
+    
+}
+
+#pie{
+    background-color: rgb(15, 47, 61);
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+#tickets{
+    background-color: rgb(50, 153, 81);
+}
+#envio{
+    background-color: rgb(50, 153, 81);
+    color: white;
+}
+.navbar-brand{
+    padding-left: 5%;
+}
+
+@media (min-width:1281px){
+    .collapse navbar-collapse {
+        position: absolute;
+        margin-left: 20%;
+    }
+    }
+
+    
+    
+    
+

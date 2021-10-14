@@ -38,16 +38,17 @@ window.addEventListener('load',function(){
        }    
    };
    function entrar(){
-       //e.preventDefault();
+       //e.preventDefault(); no se recarga la pagina
    
-       let email = document.getElementById("exampleInputEmail1").value; 
-       let pass = document.getElementById("exampleInputPassword1").value;
+       let email = document.getElementById("exampleInputEmail1").value; //capturamos el email, el value capturamos es valor
+       let pass = document.getElementById("exampleInputPassword1").value;//capturamos el password
    
-       let entra = usuario.validar(email,pass);
+       let entra = usuario.validar(email,pass); //guardamos la funcion en una variable
+
        if(entra){
            elemento.innerHTML=`
                <h1>Administración</h1>
-               <p>Bienvenid@ ${usuario.name}</p>
+               <p>Bienvenido ${usuario.name}</p>
            `;
        }
    

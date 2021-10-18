@@ -41,7 +41,7 @@ class Persona{
     }
 }
 let nombre = prompt("Escribe tu nombre")
-let persona1 = new Persona(nombre,"navas")
+let persona1 = new Persona(nombre,"navas")// el new es para instanciar la clase
 let persona2 = new Persona("Regulo","Luna")
 let persona3={
     nombre:"Pedro",
@@ -51,7 +51,7 @@ console.log(persona1.mostrarNombre())
 console.log(persona2.mostrarNombre())
 
 class Vehiculo{
-    encender(){
+    encender(){ // es una funcion o metodo, la diferencia es que una funcion devuelve un valor y el metodo no
         return "el auto está encencdido"
     }
 }

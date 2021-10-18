@@ -22,7 +22,7 @@ const comprarTicket=()=>{
                         <div class="card-body border border-primary mr-1">
                             <h5 class="card-title text-center">Estudiantes</h5>
                             <p class="card-text text-center">Tienen un descuento</p>
-                            <p class="card-title text-center font-weight-bold">80%</p>
+                            <p class="card-title text-center font-weight-bold">50%</p>
                             <p class="card-text text-center">
                                 <small class="text-muted">
                                     * presentar documentación
@@ -34,7 +34,7 @@ const comprarTicket=()=>{
                     <div class="card-body border border-primary mr-1">
                         <h5 class="card-title text-center">Estudiantes</h5>
                         <p class="card-text text-center">Tienen un descuento</p>
-                        <p class="card-title text-center font-weight-bold">80%</p>
+                        <p class="card-title text-center font-weight-bold">15%</p>
                         <p class="card-text text-center">
                             <small class="text-muted">
                                 * presentar documentación
@@ -48,7 +48,7 @@ const comprarTicket=()=>{
             <div class="row">
                 <div class="col text-uppercase text-center">
                     <small>venta</small>
-               <h2> Valor de ticket</h2>
+               <h2> Valor de ticket $200</h2>
                 </div>
             </div>
             <div class="row">
@@ -72,7 +72,7 @@ const comprarTicket=()=>{
                                     <input id="cantidadEntradas" type="text" class="form-control" placeholder="Cantidad"/>
                                 </div>
                                 <div class="form-group col-6 col-md-6 m-1">
-                                <label for="">Categoria</label>
+                                <label for="">Categoría</label>
                                 <select class="form-select" id="inputSelect">
                                     <option value="estudiante">Estudiante</option>
                                     <option value="trainee">Trainee</option>

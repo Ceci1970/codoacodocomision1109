@@ -1,0 +1,10 @@
+#derecha{
+    display: block;
+    text-align: right;
+    float: right;
+    padding-top: 25%;
+    padding-right: 5%;
+    padding-left: 5%;
+    position: absolute;
+    
+}

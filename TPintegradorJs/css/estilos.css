@@ -1,4 +1,3 @@
-
 .card-img{
     filter: opacity(50%);
     width: 100%;
@@ -40,20 +39,8 @@ a{
 }
 #tickets{
     background-color: rgb(50, 153, 81);
-    color: white;
 }
-#limpiar{
-    background-color: rgb(50, 153, 81);
-    color: white;
-    margin-right: 5px;
-}
-#btn{
-    background-color: rgb(50, 153, 81);
-    color: white;
-    margin-right: 5px;
-}
-
-#envio {
+#envio{
     background-color: rgb(50, 153, 81);
     color: white;
 }
@@ -76,7 +63,7 @@ a{
         font-size: 12px;
     }
 
-    #envio{
+    #btn{
         width:100px;
         height:40px;
         font-size:10px ;
@@ -95,7 +82,7 @@ a{
         font-size: 8px;
     }
 
-    #envio{
+    .btn{
         width:150px;
         height:30px;
         font-size:10px ;
@@ -113,7 +100,7 @@ a{
         font-size: 8px;
     }
 
-    #envio{
+    .btn{
         width:150px;
         height:15px;
         font-size:5px ;
@@ -121,4 +108,7 @@ a{
     }
     
         
+}
+#footer{
+
 }

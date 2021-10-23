@@ -1,3 +1,4 @@
+
 .card-img{
     filter: opacity(50%);
     width: 100%;
@@ -39,8 +40,32 @@ a{
 }
 #tickets{
     background-color: rgb(50, 153, 81);
+    color: white;
 }
-#envio{
+#limpiar{
+    background-color: rgb(50, 153, 81);
+    color: white;
+    margin-right: 5px;
+}
+#espacio1{
+    width:864px;
+    margin-left: 5px;
+    
+    
+}
+#espacio2{
+    width:862px;
+    
+    
+    
+}
+#btn{
+    background-color: rgb(50, 153, 81);
+    color: white;
+    margin-right: 5px;
+}
+
+#envio {
     background-color: rgb(50, 153, 81);
     color: white;
 }
@@ -53,6 +78,7 @@ a{
         position: absolute;
         margin-left: 20%;
     }
+    
     }
 @media (max-width:1023px){
     #derecha{
@@ -63,14 +89,20 @@ a{
         font-size: 12px;
     }
 
-    #btn{
+    #envio{
         width:100px;
         height:40px;
         font-size:10px ;
         
     }
-    
-    
+    #espacio1{
+        width:100%;
+        margin-left: 5px;
+    }
+    #espacio2{
+        width:100%;
+        margin-left: 5px;
+    }
     
 }
 @media (max-width:767px){
@@ -82,14 +114,20 @@ a{
         font-size: 8px;
     }
 
-    .btn{
+    #envio{
         width:150px;
         height:30px;
         font-size:10px ;
         
     }
-    
-        
+    #espacio1{
+        width:100%;
+        margin-left: 5px;
+    } 
+    #espacio2{
+        width:100%;
+        margin-left: 5px;
+    } 
 }
 @media (max-width:359px){
     #derecha{
@@ -97,18 +135,23 @@ a{
         text-align: center;
         padding-top: 0%;
         position: absolute;
-        font-size: 8px;
+        font-size: 5px;
     }
 
-    .btn{
+    #envio{
         width:150px;
         height:15px;
         font-size:5px ;
         
     }
-    
+    #espacio1{
+        width:100%;
+        margin-left: 5px;
+    }  
+    #espacio2{
+        width:100%;
+        margin-left: 5px;
+    }
         
 }
-#footer{
 
-}

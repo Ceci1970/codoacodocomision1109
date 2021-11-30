@@ -1,6 +1,6 @@
 <%-- 
     Document   : alumnos
-    Created on : 23 nov 2021, 19:34:49
+    Created on : 26 nov 2021, 11:11:10
     Author     : Win10
 --%>
 
@@ -27,17 +27,17 @@
                             <th>Teléfonos</th>
                             <th>Modificar</th>
                             <th>Eliminar</th>
-                        
+
                         </tr>
                     </thead>
                     <tbody>
-                        
+
                     </tbody>
-                    
-                    
+
+
                 </table>
         </div>
-            
+
         </div>
     </body>
 </html>

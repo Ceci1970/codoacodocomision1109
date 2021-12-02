@@ -8,6 +8,14 @@ public class Alumnos {//decalro las variables
     private String email;
     private String telefono;
 
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
     public int getId() {
         return id;
     }

@@ -4,7 +4,9 @@ import config.Conexion;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+EL CONSTRUCTOR SE TIENE QUE LLAMAR IGUAL QUE LA CLASE
+*/
 public class AlumnosDAO {
    Connection conexion;    
    public AlumnosDAO(){
@@ -66,6 +68,57 @@ public class AlumnosDAO {
             return null;
     }
    
+        
+    }
+    public boolean insertarAlumno(Alumnos alumno){
+        PreparedStatement ps;
+        try{
+             ps = conexion.prepareStatement("INSERT INTO participantes(nombres,apellidos,email, telefono)VALUES(?,?,?,?)");
+             ps.setString(1,alumno.getNombres());
+             ps.setString(2,alumno.getApellidos());
+             ps.setString(3,alumno.getEmail());
+             ps.setString(4,alumno.getTelefono());
+             ps.execute();
+             return true;
+             
+    }catch(SQLException e){
+            System.out.println(e.toString());
+            return false;
+    }
+ }
+    
+    public boolean actualizarAlumno(Alumnos alumno){
+            PreparedStatement ps;
+            try{
+             ps = conexion.prepareStatement("UPDATE participantes SET nombres=?, apellidos=?, email=?,telefono=? WHERE id=?");
+             ps.setString(1,alumno.getNombres());
+             ps.setString(2,alumno.getApellidos());
+             ps.setString(3,alumno.getEmail());
+             ps.setString(4,alumno.getTelefono());
+             ps.setInt(5, alumno.getId());
+             ps.execute();
+             return true;
+             
+    }catch(SQLException e){
+            System.out.println(e.toString());
+            return false;
+    }
+            
+        
+    }
+    public boolean eliminarAlumno(int _id){
+        PreparedStatement ps;
+        try{
+             ps = conexion.prepareStatement("DELETE FROM participante WHERE id=?");
+             
+             ps.setInt(1,_id);
+             ps.execute();
+             return true;
+             
+    }catch(SQLException e){
+            System.out.println(e.toString());
+            return false;
+    }
         
     }
 }

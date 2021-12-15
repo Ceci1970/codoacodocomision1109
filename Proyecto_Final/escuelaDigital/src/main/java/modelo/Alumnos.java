@@ -8,20 +8,20 @@ public class Alumnos {//decalro las variables
     private String email;
     private String telefono;
 
-    public String getNombres() {
-        return nombres;
-    }
-
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
-    }
-
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
 
     public String getApellidos() {
@@ -47,14 +47,14 @@ public class Alumnos {//decalro las variables
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    
-    
-    public Alumnos(int id, String nombres,String apellidos,String email, String telefono){//constructor, despues asigno los parametros que estoy recibiendo
-        
-      this.id=id;
-      this.nombres=nombres;
-      this.apellidos=apellidos;
-      this.email=email;
-      this.telefono=telefono;
-}
+
+
+    public Alumnos(int id, String n, String apellidos,
+            String email,String telefono){
+        this.id=id;
+        this.nombres=n;
+        this.apellidos=apellidos;
+        this.email=email;
+        this.telefono=telefono;
+    }
 }

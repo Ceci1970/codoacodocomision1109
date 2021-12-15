@@ -19,49 +19,44 @@
         <h1 class="text-center">Listado de Alumnos</h1>
         <div class="container">
             <div class="row">
-                <a class="btn btn-primary col-md-4 m-4" href="AlumnosController?accion=nuevo">Agregar Alumno</a>
+                <a class="btn btn-primary col-md-4 m-4" 
+                   href="AlumnosController?accion=nuevo">Agregar Alumno</a>
                 <table class="table table-primary">
                     <thead>
-                       <tr> 
+                        <tr>
                             <th>Id</th>
                             <th>Nombres</th>
                             <th>Apellidos</th>
                             <th>Email</th>
-                            <th>Teléfonos</th>
+                            <th>Teléfono</th>
                             <th>Modificar</th>
                             <th>Eliminar</th>
-
                         </tr>
                     </thead>
                     <tbody>
                         <%
-       
-                            List<Alumnos> resultado =null;
-                            AlumnosDAO alumno = new AlumnosDAO();
-                            resultado = alumno.ListarAlumnos();
-                            for(int i=0; i< resultado.size();i++){
-                                String ruta="AlumnosController?accion=modificar&id="+resultado.get(i).getId();
-                                String rutaE="AlumnosController?accion=eliminar&id="+resultado.get(i).getId();
+                            List<Alumnos> resultado  = null;
+                            AlumnosDAO alumno =new AlumnosDAO();
+                            resultado = alumno.listarAlumnos();
+                            for(int i=0; i < resultado.size(); i++){
+                                String ruta ="AlumnosController?accion=modificar&id=" +resultado.get(i).getId();
+                                String rutaE ="AlumnosController?accion=eliminar&id=" +resultado.get(i).getId();
                                 %>
                                 <tr>
-                                    <td><%=resultado.get(i).getId()%></td>
-                                    <td><%=resultado.get(i).getNombres()%></td>
-                                    <td><%=resultado.get(i).getApellidos()%></td>
-                                    <td><%=resultado.get(i).getEmail()%></td>
-                                    <td><%=resultado.get(i).getTelefono()%></td>
-                                    <td><a class="text-success" href=<%= ruta%>>X</a></td>
-                                    <td><a class="text-danger" href=<%= rutaE%>>X</a></td>
+                                    <td> <%=resultado.get(i).getId() %></td>
+                                    <td> <%=resultado.get(i).getNombres() %></td>
+                                    <td> <%=resultado.get(i).getApellidos() %></td>
+                                    <td> <%=resultado.get(i).getEmail() %></td>
+                                    <td> <%=resultado.get(i).getTelefono() %></td>
+                                    <td><a class="text-success" href="<%= ruta %>">X</a></td>
+                                    <td><a class="text-danger" href=<%= rutaE %>>X</a></td>
                                 </tr>
-                                <%
+                             <%   
                             }
-                            
                         %>
                     </tbody>
-
-
                 </table>
-        </div>
-
+            </div>
         </div>
     </body>
 </html>

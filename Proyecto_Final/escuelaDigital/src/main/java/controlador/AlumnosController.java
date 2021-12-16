@@ -28,21 +28,41 @@ public class AlumnosController extends HttpServlet {
             }else if (accion.equals("modificar")){
                 dispatcher = request.getRequestDispatcher("Vistas/modificar.jsp");
 
-            }else if(accion.equals("insert")){
+            }else if(accion.equals("actualizar")){
                 String nombre = request.getParameter("nombre");
                 String apellido = request.getParameter("apellido");
                 String email = request.getParameter("email");
                 String telefono = request.getParameter("telefono");
-                String id = request.getParameter("id");
+                int id=Integer.parseInt(request.getParameter("id"));
+                
+                
 
-                Alumnos alumno = new Alumnos(Integer.parseInt(id),nombre,apellido,email,telefono); //
+                Alumnos alumno = new Alumnos(id,nombre,apellido,email,telefono); //Integer.parseInt(id)
                 alum.actualizarAlumno(alumno);
                 dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
             }else if (accion.equals("eliminar")){
                 int id=Integer.parseInt(request.getParameter("id"));
                 alum.eliminarAlumno(id);
                 dispatcher= request.getRequestDispatcher("Vistas/alumnos.jsp");
-    }
+            }else if(accion.equals("nuevo")){
+                dispatcher= request.getRequestDispatcher("Vistas/nuevo.jsp");
+                
+            }else if(accion.equals("insert")){
+                String nombre = request.getParameter("nombre");
+                String apellido = request.getParameter("apellido");
+                String email = request.getParameter("email");
+                String telefono = request.getParameter("telefono");
+                
+                Alumnos alumno = new Alumnos(0,nombre,apellido,email,telefono);
+                alum.insertarAlumno(alumno);
+                dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
+                
+            }else if(accion.equals("ingresar")){
+                String usuario = request.getParameter("usuario");
+                String clave = request.getParameter("password");
+                boolean ingresa = alum.ingresarUsuario(usuario,clave);
+                
+            }
                 dispatcher.forward(request,response);
     }
     @Override

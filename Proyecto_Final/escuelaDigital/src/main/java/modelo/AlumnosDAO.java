@@ -28,8 +28,7 @@ public class AlumnosDAO {
                 String apellidos = rs.getString("apellidos");
                 String email = rs.getString("email");
                 String telefono = rs.getString("telefono"); 
-                Alumnos alumnos = new Alumnos(id,nombres,apellidos,
-                        email, telefono);
+                Alumnos alumnos = new Alumnos(id,nombres,apellidos,email, telefono);
                 lista.add(alumnos);
             }
             
@@ -56,8 +55,7 @@ public class AlumnosDAO {
                 String apellidos = rs.getString("apellidos");
                 String email = rs.getString("email");
                 String telefono = rs.getString("telefono");
-                alumno = new Alumnos(id,nombres,apellidos,
-                        email, telefono);
+                alumno = new Alumnos(id,nombres,apellidos,email, telefono);
              }
              return alumno;
             
@@ -84,15 +82,14 @@ public class AlumnosDAO {
     
     public boolean actualizarAlumno(Alumnos alumno){
         PreparedStatement ps;
-        int x;
+        
          try{
           ps = conexion.prepareStatement("UPDATE participante SET nombres=?, apellidos=?, email=?,telefono=? WHERE id=?");
           ps.setString(1,alumno.getNombres());
           ps.setString(2,alumno.getApellidos());
           ps.setString(3,alumno.getEmail());
           ps.setString(4,alumno.getTelefono());
-          x = alumno.getId();
-          ps.setInt(5,x);
+          ps.setInt(5,alumno.getId());
           ps.execute();
           return true;
         }catch(SQLException e){
@@ -107,6 +104,23 @@ public class AlumnosDAO {
           ps.setInt(1, _id);
           ps.execute();
           return true;
+        }catch(SQLException e){
+            System.out.println(e.toString());
+            return false;
+        }
+    }
+    public boolean ingresarUsuario(String usuario, String clave){
+        PreparedStatement ps;
+        ResultSet rs;
+        
+        try{
+            ps = conexion.prepareStatement("SELECT * FROM usuarios WHERE email=?");
+            ps.setString(1,usuario);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                return usuario.equals(rs.getString("email")) && clave.equals(rs.getString("password"));
+            }return false;
+            
         }catch(SQLException e){
             System.out.println(e.toString());
             return false;

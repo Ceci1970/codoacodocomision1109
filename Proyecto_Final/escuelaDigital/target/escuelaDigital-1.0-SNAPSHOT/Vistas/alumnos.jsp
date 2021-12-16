@@ -48,8 +48,8 @@
                                     <td> <%=resultado.get(i).getApellidos() %></td>
                                     <td> <%=resultado.get(i).getEmail() %></td>
                                     <td> <%=resultado.get(i).getTelefono() %></td>
-                                    <td><a class="text-success" href="<%= ruta %>">X</a></td>
-                                    <td><a class="text-danger" href=<%= rutaE %>>X</a></td>
+                                    <td><a class="text-success" href="<%= ruta %>"><button type="submit" class="btn btn-success">Modificar</button></a></td>
+                                    <td><a class="text-danger" href=<%= rutaE %>><button type="submit" class="btn btn-danger">Eliminar</button></a></td>
                                 </tr>
                              <%   
                             }

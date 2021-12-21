@@ -58,11 +58,16 @@ public class AlumnosController extends HttpServlet {
                 dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
                 
             }else if(accion.equals("ingresar")){
-                String usuario = request.getParameter("usuario");
-                String clave = request.getParameter("password");
+                String usuario = request.getParameter("email");
+                String clave = request.getParameter("pass");
                 boolean ingresa = alum.ingresarUsuario(usuario,clave);
-                
+                if(ingresa){
+                    dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
+                }else{
+                    dispatcher = request.getRequestDispatcher("index.jsp");
+                }
             }
+            
                 dispatcher.forward(request,response);
     }
     @Override

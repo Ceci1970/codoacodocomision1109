@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-12-2021 a las 16:47:48
+-- Tiempo de generación: 23-12-2021 a las 15:21:43
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.11
 
@@ -47,7 +47,7 @@ INSERT INTO `participante` (`id`, `nombres`, `apellidos`, `email`, `telefono`) V
 (11, 'Claudiua', 'Pepe', 'pepe@gmail.com', '2578852211'),
 (13, 'Agustina', 'Baigorria', 'bai@gmail.com', '5434434'),
 (14, 'Lola', 'Gonzalez', 'lol@gmail.com', '4578211544'),
-(15, 'Luciano', 'Espindola', 'espin@gmail.com', '5487544323235');
+(15, 'Luciana', 'Espindola', 'espin@gmail.com', '5487544323235');
 
 -- --------------------------------------------------------
 
@@ -92,7 +92,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `participante`
 --
 ALTER TABLE `participante`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

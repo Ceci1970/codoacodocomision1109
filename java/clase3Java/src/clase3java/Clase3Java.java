@@ -1,16 +1,15 @@
 
 package clase3java;
 
-import personal.Departamento;
+import personal.Departamento; /*aca los importamos porque estan en otro paquete*/
 import personal.Personal;
 
 
 public class Clase3Java {
 
     
-    public static void main(String[] args) {
-        Personal persona = new Personal("cecilia","Delfino",51);
-        
+    public static void main(String[] args) {/*aca creamos el objeto, va nombre de la clase y nombre del objeto*/
+        Personal persona = new Personal("cecilia","Delfino",51);/*le asignamos todos los atributos*/
         persona.setSueldo(250000);
         Personal administrativo = new Personal("Juan","Perez",38);
         administrativo.setSueldo(80000);

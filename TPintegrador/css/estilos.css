@@ -129,7 +129,7 @@ a{
         margin-left: 5px;
     } 
 }
-@media (max-width:359px){
+@media (max-width:360px){
     #derecha{
         display: block;
         text-align: center;
@@ -152,6 +152,10 @@ a{
         width:100%;
         margin-left: 5px;
     }
-        
+    #tickets, #orador{
+        width:100px;
+        height:40px;
+        font-size:10px ;
+    }
 }
 
